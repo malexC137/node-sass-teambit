@@ -1,0 +1,19 @@
+.navbar {
+    @include align_x;
+    margin-bottom: $no-margin;
+    img {
+        width: 100px;
+    }
+    .distancer {
+        flex-grow: 1;
+    }
+    ul {
+        display: flex;
+        margin-bottom: $no-margin;
+        li {
+            list-style: none;
+            padding-right: $padding;
+        }
+    }
+}
+

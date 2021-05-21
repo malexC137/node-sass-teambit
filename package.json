@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/malexC137/sass-teambit#readme",
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "laravel-mix": "^6.0.19"
   },
   "devDependencies": {
