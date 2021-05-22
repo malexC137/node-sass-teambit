@@ -32,20 +32,24 @@ p {
   font-size: 12px;
 }
 
+.buttons-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.buttons-container p {
+  margin: 0 5px;
+}
+
 .row-1 {
   padding: 30px 0;
 }
 .row-1 .col-right img {
   width: 100%;
 }
-.row-1 .buttons-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+.row-1 .col-left .buttons-container-top {
+  color: #0E14EE;
   margin: 30px 0 20px 0;
-}
-.row-1 .buttons-container p {
-  margin: 0 5px;
 }
 
 .row-2 {
@@ -96,4 +100,49 @@ p {
 }
 .row .text-col a {
   margin-bottom: 20px;
+}
+
+.row-7 {
+  text-align: center;
+  background-color: #7F14D4;
+  color: white;
+}
+.row-7 .title-container {
+  margin: auto;
+  max-width: 400px;
+}
+.row-7 .title-container h2 {
+  margin: auto;
+  margin-bottom: 20px;
+}
+.row-7 .text-container {
+  text-align: start;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
+  max-width: 660px;
+  color: #0E14EE;
+  border: solid 2px #0E14EE;
+  border-radius: 10px;
+}
+.row-7 .text-container .signatures-line {
+  display: flex;
+}
+.row-7 .text-container .signatures-line img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.row-7 .text-container .signatures-line .signatures-container {
+  display: flex;
+  align-items: center;
+}
+.row-7 .text-container .signatures-line .signatures-container p {
+  margin: 0px;
+}
+.row-7 .buttons-container-bot {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px;
 }

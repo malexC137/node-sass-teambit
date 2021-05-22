@@ -7,6 +7,13 @@ p {
     font-size: $font-small;
 }
 
+.buttons-container {
+    @include align_x;
+    p {
+        margin: 0 ($margin / 2);
+    }
+}
+
 .row-1 {
     padding: ($padding * 3) 0;
     .col-right {
@@ -14,11 +21,10 @@ p {
             width: 100%;
         }
     }
-    .buttons-container {
-        @include align_x;
-        margin: ($margin * 3) 0 ($margin * 2) 0;
-        p {
-            margin: 0 ($margin / 2);
+    .col-left {
+        .buttons-container-top {
+            color: $color-two;
+            margin: ($margin * 3) 0 ($margin * 2) 0;
         }
     }
 }
@@ -78,6 +84,52 @@ p {
         a {
             margin-bottom: ($margin*2);
         }
+    }
+}
+
+.row-7 {
+    text-align: center;
+    background-color: $color-one;
+    color: white;
+    .title-container {
+        margin: auto;
+        max-width: 400px;
+        h2 {
+            margin: auto;
+            margin-bottom: $margin*2;
+        }
+    }
+    .text-container {
+        text-align: start;
+        margin: auto;
+        margin-top: $margin*5;
+        padding: $padding*2;
+        background-color: white;
+        max-width: 660px;
+        color: $color-two;
+        border: solid 2px $color-two;
+        border-radius: 10px;
+        .signatures-line {
+            display: flex;
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: $margin;
+            }
+            .signatures-container {
+                display: flex;
+                align-items: center;
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+
+    }
+    .buttons-container-bot {
+        display: flex;
+        justify-content: center;
+        margin: ($margin*4) 0 ($margin*2);
     }
 }
 
