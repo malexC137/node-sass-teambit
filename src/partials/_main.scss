@@ -1,5 +1,6 @@
 section {
-    padding: ($padding * 3) 0;
+    padding: ($padding * 3) ($padding * 2);
+    color: $color-two;
 }
 
 p {
@@ -7,6 +8,7 @@ p {
 }
 
 .row-1 {
+    padding: ($padding * 3) 0;
     .col-right {
         img {
             width: 100%;
@@ -23,8 +25,8 @@ p {
 
 .row-2 {
     background-color: $color-one;
-    color: white;
     text-align: center;
+    color: white;
     h4 {
         margin: auto;
         padding: 0 ($padding*2);
@@ -37,20 +39,45 @@ p {
         margin: ($margin*4) ($margin*4) ($margin*2);
         .img-card {
             img {
-                height: 80px;
-                width: 80px;
+                height: 100px;
+                width: 100px;
                 margin: 0 ($margin*4) ($margin*4);
+                padding: 10px;
+                background-color: white;
             }
         }
     }
     .img-container-bot {
         img {
-            width: 200px;
+            width: 250px;
             margin: $margin*2 0 $margin*8;
+            padding: 25px;
+            background-color: white;
         }
     }
     hr {
         margin-bottom: ($margin*6);
+    }
+}
+
+.row {
+    .img-col, .text-col {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
+    .text-col {
+        span {
+            margin: ($margin*4) 0 ($margin*2);
+            padding-right: $padding*2;
+            max-width: 320px;
+        }
+        a {
+            margin-bottom: ($margin*2);
+        }
     }
 }
 
