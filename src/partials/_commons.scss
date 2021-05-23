@@ -1,3 +1,64 @@
+section {
+    padding: ($padding * 3) ($padding * 2);
+    color: $color-two;
+}
+
+p {
+    font-size: $font-small;
+}
+
+a {
+    color: $color-two;
+}
+
+a:hover {
+    color: $color-one;
+}
+
 hr {
     margin: $no-margin;
+    border-top: solid 1px $color-two;
+}
+
+ul {
+    li {
+        list-style: none
+    };
+}
+
+.buttons-container {
+    @include align_x;
+    button {
+        border-radius: 5px;
+        padding-top: 5px;
+        
+        img {
+            width: 20px;
+            margin: 2px;
+        }
+        background-color: $color-two;
+        color: white;
+        
+    }
+    button:hover {
+        background-color: $color-three;
+    }
+    p {
+        margin: 0 ($margin / 2);
+    }
+    p:hover {
+        background-color: $color-three;
+    }
+}
+
+.row {
+    @include flex-wrap;
+    .img-col, .text-col {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
 }

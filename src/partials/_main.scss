@@ -1,19 +1,3 @@
-section {
-    padding: ($padding * 3) ($padding * 2);
-    color: $color-two;
-}
-
-p {
-    font-size: $font-small;
-}
-
-.buttons-container {
-    @include align_x;
-    p {
-        margin: 0 ($margin / 2);
-    }
-}
-
 .row-1 {
     padding: ($padding * 3) 0;
     .col-right {
@@ -32,16 +16,15 @@ p {
 .row-2 {
     background-color: $color-one;
     text-align: center;
-    color: white;
+    color: $color-five;
     h4 {
         margin: auto;
         padding: 0 ($padding*2);
         max-width: 650px;
     }
     .img-container-top {
-        display: flex;
+        @include flex-wrap;
         justify-content: space-around;
-        flex-wrap: wrap;
         margin: ($margin*4) ($margin*4) ($margin*2);
         .img-card {
             img {
@@ -49,7 +32,7 @@ p {
                 width: 100px;
                 margin: 0 ($margin*4) ($margin*4);
                 padding: 10px;
-                background-color: white;
+                background-color: $color-five;
             }
         }
     }
@@ -58,7 +41,7 @@ p {
             width: 250px;
             margin: $margin*2 0 $margin*8;
             padding: 25px;
-            background-color: white;
+            background-color: $color-five;
         }
     }
     hr {
@@ -67,14 +50,6 @@ p {
 }
 
 .row {
-    .img-col, .text-col {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        img {
-            width: 100%;
-        }
-    }
     .text-col {
         span {
             margin: ($margin*4) 0 ($margin*2);
@@ -88,14 +63,16 @@ p {
 }
 
 .row-7 {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: $color-one;
-    color: white;
+    color: $color-five;
     .title-container {
         margin: auto;
         max-width: 400px;
         h2 {
-            margin: auto;
+            text-align: start;
             margin-bottom: $margin*2;
         }
     }
@@ -104,7 +81,7 @@ p {
         margin: auto;
         margin-top: $margin*5;
         padding: $padding*2;
-        background-color: white;
+        background-color: $color-five;
         max-width: 660px;
         color: $color-two;
         border: solid 2px $color-two;
@@ -130,6 +107,14 @@ p {
         display: flex;
         justify-content: center;
         margin: ($margin*4) 0 ($margin*2);
+    }
+    p {
+        a {
+            color: $color-five;
+        }
+        a:hover {
+            color: $color-two;
+        }
     }
 }
 

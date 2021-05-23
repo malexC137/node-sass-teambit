@@ -11,9 +11,22 @@
         display: flex;
         margin-bottom: $no-margin;
         li {
-            list-style: none;
-            padding-right: $padding;
+            padding: $padding $padding 0 0 ;
         }
+    }
+    button {
+        padding: 8px 5px;
+        background-color: $color-five;
+        border-radius: 5px;
+        border: solid 1px $color-two;
+        color: $color-two;
+        img {
+            width: 20px;
+        }
+    }
+    button:hover {
+        background-color: $color-four;
+        color: $color-five;
     }
 }
 

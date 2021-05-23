@@ -1,0 +1,11 @@
+@media all and (max-width: 768px) {
+    .row {
+        .text-col {
+            order: 2;
+            margin: auto;
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+}
